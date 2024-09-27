@@ -70,7 +70,7 @@ def capture_frames(cap, save_folder):
             save_image(save_folder, current_image_name, frame)
             current_image_name += 1
         if key == ord('d'):
-            eliminar_carpeta(save_folder)
+            delete_folder(save_folder)
 
 def main():
     # Main function to run the application.
