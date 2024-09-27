@@ -1,6 +1,6 @@
 import os
 import cv2
-from functions import eliminar_carpeta, save_image
+from functions import delete_folder, save_image
 
 # Constants
 DATA_FOLDER = 'data'
