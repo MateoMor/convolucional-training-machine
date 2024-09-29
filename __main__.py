@@ -1,15 +1,16 @@
+# __main__.py
+
 import os
 import cv2
 from functions import delete_folder, save_image
 
-# Constants
-DATA_FOLDER = 'data'
+from constants import DATA_FOLDER, TRAIN_FOLDER, VALIDATION_FOLDER
 
 # Global Variables
 current_image_name = 0
 
 def initialize_data_folder():
-    # Create the main data folder if it does not exist.
+    # Create the main directories
     if not os.path.exists(DATA_FOLDER):
         os.makedirs(DATA_FOLDER)
 
